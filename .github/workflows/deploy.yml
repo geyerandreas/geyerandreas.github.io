@@ -11,6 +11,7 @@ permissions:
 
 env:
   CARGO_TERM_COLOR: always
+  TRUNK_BUILD_RELEASE: true
 
 jobs:
   build-deploy:
@@ -26,3 +27,6 @@ jobs:
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           brew install trunk
+
+      - name: Build
+        run: trunk build --verbose
