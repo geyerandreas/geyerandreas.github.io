@@ -15,6 +15,10 @@ env:
   CARGO_TERM_COLOR: always
   TRUNK_BUILD_RELEASE: true
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
