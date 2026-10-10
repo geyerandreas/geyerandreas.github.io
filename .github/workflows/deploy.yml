@@ -23,10 +23,13 @@ jobs:
       - name: Install WebAssembly Target
         run: rustup target add wasm32-unknown-unknown
 
-      - name: Install Trunk
+      - name: Setup homebrew
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-          brew install trunk
+          echo "$(brew --prefix)/bin" >> "$GITHUB_PATH"
+
+      - name: Install Trunk
+        run: brew install trunk
 
       - name: Build
         run: trunk build --verbose
