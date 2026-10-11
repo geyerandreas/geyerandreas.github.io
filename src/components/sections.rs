@@ -13,7 +13,7 @@ pub fn hero() -> Html {
                     <strong>{"Full-Stack Software Engineer"}</strong>
                     <span>{"Somewhere between a blank canvas and a production server."}</span>
                 </p>
-                <a class="button button-primary" href="#work">{"See my work"}</a>
+                // <a class="button button-primary" href="#work">{"See my work"}</a>
             </div>
             <div class="hero-orbit" aria-hidden="true">
                 <div class="orbit orbit-one"></div>
