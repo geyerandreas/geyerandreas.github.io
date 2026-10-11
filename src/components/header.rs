@@ -11,8 +11,7 @@ pub fn header() -> Html {
                 </a>
                 <div class="nav-links">
                     <a href="#about"><span>{"01."}</span>{" About"}</a>
-                    <a href="#experience"><span>{"02."}</span>{" Experience"}</a>
-                    <a href="#work"><span>{"03."}</span>{" Work"}</a>
+                    <a href="#principles"><span>{"02."}</span>{" Principles"}</a>
                     <a class="nav-cta" href="#contact">{"Get in touch"}</a>
                 </div>
             </nav>

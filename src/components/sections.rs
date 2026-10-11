@@ -53,7 +53,7 @@ pub fn about() -> Html {
 #[component(Principles)]
 pub fn principles() -> Html {
     html! {
-        <section id="about" class="section shell split-section">
+        <section id="principles" class="section shell split-section">
             <SectionHeading number="02" title="My principles" />
             <div class="about-grid">
                 <div class="principles">
