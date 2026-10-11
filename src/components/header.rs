@@ -1,5 +1,7 @@
 use yew::prelude::*;
 
+use crate::constants::EMAIL;
+
 #[component(Header)]
 pub fn header() -> Html {
     html! {
@@ -12,7 +14,7 @@ pub fn header() -> Html {
                 <div class="nav-links">
                     <a href="#about"><span>{"01."}</span>{" About"}</a>
                     <a href="#principles"><span>{"02."}</span>{" Principles"}</a>
-                    <a class="nav-cta" href="#contact">{"Get in touch"}</a>
+                    <a class="nav-cta" href={format!("mailto:{EMAIL}")}>{"Get in touch"}</a>
                 </div>
             </nav>
         </header>
